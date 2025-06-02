@@ -1,0 +1,180 @@
+.secaoDestaque {
+    min-height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    overflow: hidden;
+    background-color: #111827; 
+  }
+  
+  .imagemFundoSlide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out, opacity 0.7s ease-in-out;
+  }
+  
+  .overlayEscuro {
+    position: absolute;
+    inset: 0;
+    background-color: #000000;
+    opacity: 0.6;
+  }
+  
+  .conteudoSlide {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.55); 
+    padding: 2rem 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    max-width: 50rem; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tituloPrincipal {
+    font-size: 3rem; 
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-family: serif;
+    animation: fadeInDown 0.7s ease-out;
+  }
+  
+  .subtitulo {
+    font-size: 1.25rem;
+    color: #e5e7eb;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  .botaoAcao {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    padding: 0.85rem 2.25rem;
+    border-radius: 0.375rem;
+    font-size: 1.125rem;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    display: inline-block;
+  }
+  .botaoAcao:hover {
+    background-color: #f3f4f6; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: scale(1.03);
+  }
+  
+  .botaoNavegacao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  .botaoNavegacao:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .botaoAnterior {
+    left: 1rem;
+  }
+  .botaoProximo {
+    right: 1rem;
+  }
+  
+  .indicadoresContainer {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .indicador {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    background-color: #9ca3af;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .indicador:hover {
+    background-color: #e5e7eb;
+  }
+  .indicadorAtivo {
+    background-color: #ffffff;
+    transform: scale(1.25);
+  }
+  
+  .secaoDestaqueFallback {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1f2937; 
+      color: white;
+  }
+  .tituloFallback {
+      font-size: 2.25rem;
+      font-weight: 700;
+  }
+  .subtituloFallback {
+      margin-top: 1rem;
+      font-size: 1.125rem;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tituloPrincipal {
+      font-size: 2.25rem; 
+    }
+    .subtitulo {
+      font-size: 1.125rem; 
+    }
+    .botaoAcao {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+    .conteudoSlide {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tituloPrincipal {
+      font-size: 1.875rem; 
+    }
+    .subtitulo {
+      font-size: 1rem;
+    }
+  }

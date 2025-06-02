@@ -1,0 +1,69 @@
+.secaoSobre {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #f3f4f6; 
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; 
+  }
+  
+  .colunaImagem {
+    width: 100%;
+  }
+  
+  .imagemCozinha {
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #e5e7eb; 
+    max-height: 450px; 
+  }
+  
+  .colunaTexto {
+    width: 100%;
+    text-align: left; 
+  }
+  
+  .titulo {
+    font-size: 2.25rem; 
+    font-weight: 700; 
+    color: #000000; 
+    margin-bottom: 2rem; 
+    font-family: serif;
+  }
+  
+  .paragrafo {
+    color: #374151; 
+    line-height: 1.75; 
+    margin-bottom: 1.5rem; 
+    font-size: 1.125rem; 
+  }
+  .paragrafo:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: 1024px) { 
+    .container {
+      flex-direction: row;
+    }
+    .colunaImagem {
+      width: 50%;
+    }
+    .colunaTexto {
+      width: 50%;
+    }
+     .titulo {
+      font-size: 3rem; 
+    }
+  }

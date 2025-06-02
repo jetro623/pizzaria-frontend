@@ -1,0 +1,65 @@
+.cartao {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+  }
+  .cartao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  }
+  
+  .imagem {
+    width: 8rem; 
+    height: 12rem; 
+    object-fit: contain;
+    margin-bottom: 1rem; 
+  }
+  
+  .nome {
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    color: #000000; 
+    margin-bottom: 0.25rem; 
+    font-family: serif;
+  }
+  
+  .volume {
+    color: #4b5563; 
+    font-size: 0.875rem; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  .preco {
+    font-size: 1.125rem; 
+    font-weight: 700; 
+    color: #000000; 
+    margin-bottom: 0.75rem; 
+  }
+  
+  .botaoAdicionar {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem; 
+    border-radius: 0.375rem;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    font-size: 0.875rem; 
+    border: none;
+    cursor: pointer;
+  }
+  .botaoAdicionar:hover {
+    background-color: #1f2937;
+  }

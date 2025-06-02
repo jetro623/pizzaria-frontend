@@ -1,0 +1,144 @@
+.cabecalhoPrincipal {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 2px solid #4A5568; 
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  .logoContainer:hover .logoImagem {
+    opacity: 0.8;
+  }
+  .logoContainer:hover .logoTexto {
+    color: #D1D5DB; 
+  }
+  
+  .logoImagem {
+    height: 3.5rem; 
+    object-fit: contain;
+    transition: opacity 150ms;
+  }
+  
+  .logoTexto {
+    font-size: 1rem; 
+    font-family: serif;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    transition: color 150ms;
+  }
+  
+  .navegacaoPrincipal {
+    display: none; 
+  }
+  
+  .linkNavegacao {
+      margin-left: 1.5rem;
+      font-size: 1.125rem;
+      text-decoration: none;
+      color: inherit;
+      transition: color 300ms;
+  }
+  .linkNavegacao:hover {
+      color: #D1D5DB; 
+  }
+  .navegacaoPrincipal a:first-child {
+      margin-left: 0;
+  }
+  
+  .menuDireita {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .botaoCarrinho {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    position: relative;
+    cursor: pointer;
+    transition: color 300ms;
+  }
+  .botaoCarrinho:hover {
+    color: #D1D5DB;
+  }
+  
+  .contadorCarrinho {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    height: 1.25rem;
+    width: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  
+  .botaoMenuMobile {
+    display: inline-block; 
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .dropdownMenuMobile {
+    background-color: #1A202C; 
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-top: 1px solid #4A5568;
+  }
+  .linkDropdown {
+    display: block;
+    padding: 0.75rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 300ms;
+  }
+  .linkDropdown:hover {
+    background-color: #2D3748; 
+  }
+  
+  
+  @media (min-width: 768px) {
+    .navegacaoPrincipal {
+      display: flex;
+    }
+    .botaoMenuMobile {
+      display: none;
+    }
+  }
